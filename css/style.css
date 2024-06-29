@@ -1,0 +1,445 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        " iphone iphone how-to-use how-to-use "
+        " iphone iphone how-to-use how-to-use "
+        " iphone iphone how-to-use how-to-use "
+        " iphone iphone how-to-use how-to-use "
+
+        " keyboard pc pc floppy "
+        " keyboard pc pc floppy "
+        " keyboard pc pc floppy "
+        " keyboard pc pc floppy "
+
+        " game much-b much-b floppy "
+        " game much-b much-b floppy "
+        " game much-b much-b floppy "
+        " game much-b much-b floppy "
+
+        " twitter popular tv tv "
+        " twitter popular tv tv "
+        " twitter popular tv tv "
+
+
+    ;
+
+}
+
+
+/*  */
+
+.head {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #9fa3a7;
+    font-size: .8rem;
+}
+
+.title {
+    font-family: "Arvo", serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+.link {
+    color: #27b9c2;
+    font-family: "Open Sans", sans-serif;
+    font-size: .8rem;
+}
+
+.descrption {
+    color: #9fa3a7;
+}
+
+
+
+#how-to-use {
+    background-color: #f7f8f9;
+    grid-area: how-to-use;
+}
+
+#how-to-use .title {
+    font-size: 3.0rem;
+    line-height: 1.2;
+    width: 70%;
+
+}
+
+
+
+#iphone {
+    background-color: #fff;
+    grid-area: iphone;
+}
+
+
+
+
+#iphone .descrption {
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 300;
+}
+
+#iphone .image {}
+
+#keyboard {
+
+    background-color: #F05638;
+    grid-area: keyboard;
+    position: relative;
+    z-index: 1;
+}
+
+#keyboard .title {
+    color: #fffbfb;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#keyboard .link {
+    color: #FFC809;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+}
+
+#pc {
+    background-color: #fff;
+    grid-area: pc;
+}
+
+#pc h2 {
+    font-size: 1.4rem;
+}
+
+#pc .image {
+    width: 450px;
+    position: relative;
+    left: 0;
+    transform: translate(-65%, 15%);
+}
+
+#pc .link {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+i {
+    font-weight: bold;
+}
+
+
+#floppy {
+    grid-area: floppy;
+    background-color: #8F76BC;
+}
+
+
+
+
+#floppy .layer {
+    background-color: #7F64AD;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    
+}
+
+#floppy .is {
+    background-color: rgba(255, 255, 255, 0.08);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 3;
+    border-radius: 30px;
+
+}
+
+#floppy .is span,
+#floppy .is i {
+    font-size: .8rem;
+
+}
+
+#floppy .image {
+    width: 150px;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+}
+
+
+
+#floppy span:first-of-type {
+    color: #fff;
+}
+
+#floppy a {
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+#floppy .bootom p {
+    line-height: 30px;
+}
+
+#game {
+    background-color: #F7F8F9;
+    grid-area: game;
+}
+
+
+#game .image {
+    max-width: 248px;
+    transform: translateX(-10%);
+}
+
+#game .title {
+    font-size: 1.8rem;
+}
+
+#game .link {
+    font-size: .8rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+
+#much-b {
+    grid-area: much-b;
+    background-color: #93B6B7;
+}
+
+
+#much-b , #much-b .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#much-b span {
+    width: fit-content;
+    padding: 3px 10px;
+    font-size: .6rem;
+    background-color: #FB684F;
+    display: block;
+    margin: 8px 5px;
+    border-radius: 20px;
+}
+
+#much-b .title {
+    font-size: 1.4rem;
+    width: 40%;
+    margin: auto;
+
+}
+
+#much-b .image {
+    left: 0;
+    transform: translate(-10%, 0%);
+    z-index: 2;
+    position: relative;
+
+}
+
+#much-b .image img {
+    width: 100%;
+}
+
+
+/* #much-b .image::before {
+    content: "UX";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-37%, -55%);
+    font-size: 400px;
+    font-family: "Arvo", serif;
+    z-index: -1;
+    opacity: .1;
+} */
+
+
+#much-b p.h1 {
+    font-size: 20rem;
+    /* background-color: red; */
+    width: fit-content;
+    position: absolute;
+    top: -40%;
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: -1;
+    font-family: "Arvo", serif;
+    opacity: .1;
+    margin: 0;
+}
+
+
+
+
+
+#twitter {
+    grid-area: twitter;
+    background-color: #37D5F4;
+
+}
+
+#twitter .container {
+}
+
+#twitter .layer {
+    background-color: #36CFED;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+#twitter i {
+    color: #FFFC00;
+}
+
+
+
+#popular {
+    grid-area: popular;
+    background-color: #F7F8F9;
+
+}
+
+#popular p {
+    background-color: #7CC424;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 3px 10px;
+    font-size: .5rem;
+}
+
+#popular .title {
+    font-size: 1.7rem;
+
+}
+
+
+#tv {
+    background-color: #2C2C2C;
+    grid-area: tv;
+}
+
+#tv .image {
+
+    width: 271px;
+    transform:translateX(-15%) ;
+}
+
+#tv .title {
+    width: 34%;
+    font-size: 1.4rem;
+}
+
+
+
+@media (max-width: 1190px) {
+    main {
+        grid-template-areas:
+            " how-to-use how-to-use how-to-use how-to-use "
+            " how-to-use how-to-use how-to-use how-to-use "
+            " how-to-use how-to-use how-to-use how-to-use "
+            " how-to-use how-to-use how-to-use how-to-use "
+
+            " iphone iphone iphone iphone "
+            " iphone iphone iphone iphone "
+            " iphone iphone iphone iphone "
+            " iphone iphone iphone iphone "
+
+
+            "keyboard keyboard game game "
+            "keyboard keyboard game game "
+            "keyboard keyboard game game "
+            "keyboard keyboard game game "
+
+
+            " pc pc pc pc "
+            " pc pc pc pc "
+            " pc pc pc pc "
+            " pc pc pc pc "
+
+            "twitter twitter floppy floppy"
+            "twitter twitter floppy floppy"
+            "twitter twitter floppy floppy"
+            "twitter twitter floppy floppy"
+            
+
+
+            "much-b much-b floppy floppy"
+            "much-b much-b floppy floppy"
+            "much-b much-b floppy floppy"
+            "much-b much-b floppy floppy"
+
+            "popular popular popular popular"
+            "popular popular popular popular"
+
+            " tv tv tv tv "
+            " tv tv tv tv "
+            " tv tv tv tv "
+            " tv tv tv tv "
+        ;
+    }
+
+    #how-to-use .title {
+        font-size: 2rem;
+        line-height: 1.2;
+        width: 70%;
+    
+    }
+
+
+    #much-b .image {
+        transform: translate(-10%, 10%);
+    }
+
+
+    #much-b p.h1 {
+        top: -50%;
+        font-size: 16rem;
+    }
+    /* #iphone .inner {
+        width: 32%;
+    } */
+
+
+}
+
+
+@media (max-width:992px) {
+    #much-b .image {
+        transform: translate(-10%, 15%);
+    }
+
+
+    #much-b p.h1 {
+        top: -55%;
+        font-size: 14rem;
+    }
+}
+
+
+
+
+@media (max-width:768px) {
+    #much-b .image {
+        transform: translate(-10%, 40%);
+    }
+
+
+    #much-b p.h1 {
+        top: -50%;
+        font-size: 9rem;
+    }
+}
